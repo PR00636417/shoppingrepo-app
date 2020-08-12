@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/shoppingrepo-app/static/css/main.39bf9bb5.chunk.css",
+    "main.js": "/shoppingrepo-app/static/js/main.f3fa8625.chunk.js",
+    "main.js.map": "/shoppingrepo-app/static/js/main.f3fa8625.chunk.js.map",
+    "runtime-main.js": "/shoppingrepo-app/static/js/runtime-main.48c60576.js",
+    "runtime-main.js.map": "/shoppingrepo-app/static/js/runtime-main.48c60576.js.map",
+    "static/js/2.2b564805.chunk.js": "/shoppingrepo-app/static/js/2.2b564805.chunk.js",
+    "static/js/2.2b564805.chunk.js.map": "/shoppingrepo-app/static/js/2.2b564805.chunk.js.map",
+    "index.html": "/shoppingrepo-app/index.html",
+    "precache-manifest.be2e0c21d784a218ec07faac562f0b01.js": "/shoppingrepo-app/precache-manifest.be2e0c21d784a218ec07faac562f0b01.js",
+    "service-worker.js": "/shoppingrepo-app/service-worker.js",
+    "static/css/main.39bf9bb5.chunk.css.map": "/shoppingrepo-app/static/css/main.39bf9bb5.chunk.css.map",
+    "static/js/2.2b564805.chunk.js.LICENSE.txt": "/shoppingrepo-app/static/js/2.2b564805.chunk.js.LICENSE.txt",
+    "static/media/FormalShirt.jpeg": "/shoppingrepo-app/static/media/FormalShirt.ee9e2474.jpeg",
+    "static/media/StripedSaree.jpeg": "/shoppingrepo-app/static/media/StripedSaree.c19a8e14.jpeg",
+    "static/media/babyShopcover.jpg": "/shoppingrepo-app/static/media/babyShopcover.5493a000.jpg",
+    "static/media/clothingcover.jpg": "/shoppingrepo-app/static/media/clothingcover.93cc73b5.jpg",
+    "static/media/drumkeyboard.jpeg": "/shoppingrepo-app/static/media/drumkeyboard.f489c47e.jpeg",
+    "static/media/dungaree.jpeg": "/shoppingrepo-app/static/media/dungaree.ead2b4d7.jpeg",
+    "static/media/girlsparty.jpeg": "/shoppingrepo-app/static/media/girlsparty.46f97eec.jpeg",
+    "static/media/himalaya.jpeg": "/shoppingrepo-app/static/media/himalaya.7beb1f09.jpeg",
+    "static/media/hoodie.jpeg": "/shoppingrepo-app/static/media/hoodie.84418d10.jpeg",
+    "static/media/jacket.jpeg": "/shoppingrepo-app/static/media/jacket.53cabec4.jpeg",
+    "static/media/junglebook.jpeg": "/shoppingrepo-app/static/media/junglebook.c0e11bbf.jpeg",
+    "static/media/laughingboy.jpeg": "/shoppingrepo-app/static/media/laughingboy.da11487d.jpeg",
+    "static/media/mamaearth.jpeg": "/shoppingrepo-app/static/media/mamaearth.7083fffe.jpeg",
+    "static/media/pikachu.jpeg": "/shoppingrepo-app/static/media/pikachu.a6912889.jpeg",
+    "static/media/teddy.jpeg": "/shoppingrepo-app/static/media/teddy.d78ea378.jpeg",
+    "static/media/yellowDress.jpeg": "/shoppingrepo-app/static/media/yellowDress.a52040ff.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.48c60576.js",
+    "static/js/2.2b564805.chunk.js",
+    "static/css/main.39bf9bb5.chunk.css",
+    "static/js/main.f3fa8625.chunk.js"
+  ]
+}
