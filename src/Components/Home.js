@@ -9,7 +9,7 @@ const Home = () => {
       <div className="home-header">
         <div className="overlay" />
         <nav>
-          <h2>Online Shopping</h2>
+          <h2 style={{ float: "left", padding: "2%" }}>Online Shopping</h2>
         </nav>
       </div>
       <div style={{ maxHeight: "500px", overflowY: "scroll" }}>

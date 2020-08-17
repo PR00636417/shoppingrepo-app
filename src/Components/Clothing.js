@@ -1,26 +1,17 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import Dungaree from "../assets/clothing/dungaree.jpeg";
-import RedFrock from "../assets/clothing/girlsparty.jpeg";
-import BlueJacket from "../assets/clothing/hoodie.jpeg";
-import PinkJacket from "../assets/clothing/jacket.jpeg";
-import StripedSaree from "../assets/clothing/StripedSaree.jpeg";
-import YellowDress from "../assets/clothing/yellowDress.jpeg";
-import FormalShirt from "../assets/clothing/FormalShirt.jpeg";
-
 import "../App.css";
-import { clothingProducts } from "../tools/mockData";
+import clothingList from "../tools/clothing.json";
+import { AddToCart, CartProductsCount } from "../redux/actions/userActions";
+import { useDispatch, useSelector } from "react-redux";
+import CustomToastMessage from "./CustomToastMessage";
 
 const Clothing = () => {
-  const [cartNumber, setCartNumbers] = useState(
-    localStorage.getItem("cartCount") ? localStorage.getItem("cartCount") : 0
-  );
+  const dispatch = useDispatch();
+  const { cartCount, cartProducts } = useSelector(state => state.userData);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
-  let cartProducts = localStorage.getItem("cartProducts")
-    ? JSON.parse(localStorage.getItem("cartProducts"))
-    : [];
+  const [show, setShow] = useState(false);
 
   const addToCart = selectedProductName => {
     let cartProductsLength = [];
@@ -29,42 +20,35 @@ const Clothing = () => {
     );
 
     if (cartProductsLength.length === 0) {
-      cartProducts.push({
+      let existingCartProducts = [...cartProducts];
+      existingCartProducts.push({
         productName: selectedProductName,
         count: 1,
-        price: clothingProducts[selectedProductName].price
+        price: clothingList[selectedProductName].price,
+        url: clothingList[selectedProductName].url
       });
-      localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-      setCartNumbers(parseInt(cartNumber) + 1);
-      localStorage.setItem("cartCount", parseInt(cartNumber) + 1);
+      dispatch(AddToCart(existingCartProducts));
+      dispatch(CartProductsCount(parseInt(cartCount) + 1));
       setErrorMessage("");
       setSuccessMessage("Item is added into cart successfully");
+      setShow();
     } else {
       setSuccessMessage("");
       setErrorMessage("Item already exists in cart");
+      setShow();
     }
   };
 
   let clothingListItems = [];
-  Object.entries(clothingProducts).forEach(items => {
+  Object.entries(clothingList).forEach(items => {
     clothingListItems.push(items[1]);
   });
 
-  const productImages = {
-    Dungaree,
-    RedFrock,
-    BlueJacket,
-    PinkJacket,
-    StripedSaree,
-    YellowDress,
-    FormalShirt
-  };
-
   let renderClothingList = clothingListItems.map((product, index) => {
     return (
-      <div className="image" key={index}>
+      <div className="image" key={index} style={{ marginTop: "2%" }}>
         <img
-          src={productImages[product.name]}
+          src={require(`../assets/clothing/${product.url}`)}
           alt="productImage"
           width="100px"
           height="150px"
@@ -85,10 +69,12 @@ const Clothing = () => {
     <div>
       <Header />
       <div className="container">{renderClothingList}</div>
-      {successMessage && (
-        <div className="successMessageAlert">{successMessage}</div>
-      )}
-      {errorMessage && <div className="errorMessageAlert">{errorMessage}</div>}
+      <CustomToastMessage
+        show={show}
+        setShow={setShow}
+        successMessage={successMessage}
+        errorMessage={errorMessage}
+      />
     </div>
   );
 };

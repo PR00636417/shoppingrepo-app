@@ -1,26 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header";
-import DrumKeyboard from "../assets/babyproducts/drumkeyboard.jpeg";
-import Himalaya from "../assets/babyproducts/himalaya.jpeg";
-import JungleBook from "../assets/babyproducts/junglebook.jpeg";
-import LaughingBoy from "../assets/babyproducts/laughingboy.jpeg";
-import MamaEarth from "../assets/babyproducts/mamaearth.jpeg";
-import Pikachu from "../assets/babyproducts/pikachu.jpeg";
-import Teddy from "../assets/babyproducts/teddy.jpeg";
 import "../App.css";
-import { babyProducts } from "../tools/mockData";
+import productsList from "../tools/products.json";
+import {
+  AddToCart,
+  CartProductsCount,
+  getProducts
+} from "../redux/actions/userActions";
+import { useDispatch, useSelector } from "react-redux";
+import CustomToastMessage from "./CustomToastMessage";
 
-const Clothing = () => {
-  const [cartNumber, setCartNumbers] = useState(
-    localStorage.getItem("cartCount") ? localStorage.getItem("cartCount") : 0
-  );
-
+const Products = () => {
+  const dispatch = useDispatch();
+  const { cartCount, cartProducts } = useSelector(state => state.userData);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [show, setShow] = useState(false);
 
-  let cartProducts = localStorage.getItem("cartProducts")
-    ? JSON.parse(localStorage.getItem("cartProducts"))
-    : [];
+  useEffect(
+    () => {
+      dispatch(getProducts());
+    },
+    [dispatch]
+  );
 
   const addToCart = selectedProductName => {
     let cartProductsLength = [];
@@ -28,42 +30,35 @@ const Clothing = () => {
       list => list.productName === selectedProductName
     );
     if (cartProductsLength.length === 0) {
-      cartProducts.push({
+      let existingCartProducts = [...cartProducts];
+      existingCartProducts.push({
         productName: selectedProductName,
         count: 1,
-        price: babyProducts[selectedProductName].price
+        price: productsList[selectedProductName].price,
+        url: productsList[selectedProductName].url
       });
-      localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-      setCartNumbers(parseInt(cartNumber) + 1);
-      localStorage.setItem("cartCount", parseInt(cartNumber) + 1);
+      dispatch(AddToCart(existingCartProducts));
+      dispatch(CartProductsCount(parseInt(cartCount) + 1));
       setErrorMessage("");
       setSuccessMessage("Item is added into cart successfully");
+      setShow();
     } else {
       setSuccessMessage("");
+      setShow();
       setErrorMessage("Item already exists in cart");
     }
   };
 
   let productListItems = [];
-  Object.entries(babyProducts).forEach(items => {
+  Object.entries(productsList).forEach(items => {
     productListItems.push(items[1]);
   });
 
-  const productImages = {
-    DrumKeyboard,
-    Himalaya,
-    JungleBook,
-    LaughingBoy,
-    MamaEarth,
-    Pikachu,
-    Teddy
-  };
-
   let renderProductList = productListItems.map((product, index) => {
     return (
-      <div className="image" key={index}>
+      <div className="image" key={index} style={{ marginTop: "2%" }}>
         <img
-          src={productImages[product.name]}
+          src={require(`../assets/babyproducts/${product.url}`)}
           alt="productImage"
           width="100px"
           height="150px"
@@ -84,12 +79,14 @@ const Clothing = () => {
     <div>
       <Header />
       <div className="container">{renderProductList}</div>
-      {successMessage && (
-        <div className="successMessageAlert">{successMessage}</div>
-      )}
-      {errorMessage && <div className="errorMessageAlert">{errorMessage}</div>}
+      <CustomToastMessage
+        show={show}
+        setShow={setShow}
+        successMessage={successMessage}
+        errorMessage={errorMessage}
+      />
     </div>
   );
 };
 
-export default Clothing;
+export default Products;

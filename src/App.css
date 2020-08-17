@@ -70,7 +70,7 @@ header {
   background-color: rgba(10, 10, 10, 0.3);
 }
 
-nav {
+/* nav {
   position: absolute;
   top: 0;
   right: 0;
@@ -80,7 +80,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px 60px 0 60px;
-}
+} */
 
 nav li {
   list-style: none;
@@ -95,16 +95,66 @@ li a {
   text-decoration: none;
 }
 
+li a:hover {
+  padding: 5px;
+  background-color: royalblue;
+  text-decoration: none;
+  color: #FFFF;
+}
+li a:active {
+  background-color: royalblue;
+  color: #fff;
+}
+
+.list1 {
+  padding: 2%;
+  text-decoration: none;
+}
+
+.navigationMenu {
+  background-image: url("./assets/images.png");
+  /* background: linear-gradient(to right, #7a4183, #0c479d, #0e69b0) 268%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 150px; */
+  position: relative;
+  padding-right: 6%;
+  padding-left: 5%;
+}
+
+.linkbutton1 {
+  /* padding-top: 8% !important; */
+  padding-right: 5px;
+  padding-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.linkbutton {
+  font-size: 17px;
+}
+
 /* .cart {
   vertical-align: bottom;
   font-size: 20px;
   padding-right: 5px;
 } */
 
-.cart a {
+/* .cart a {
   background-color: royalblue;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
+} */
+
+.linkHighlighted a {
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.linkNormal a {
+  background-color: #fff;
   text-decoration: none;
 }
 .container,
@@ -113,7 +163,7 @@ li a {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  padding-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .image {
@@ -282,6 +332,13 @@ li a {
   .basketToContainer {
     padding-right: 8%;
   }
+  .product {
+    width: 30%;
+    overflow-x: hidden;
+  }
+  .basketTotalContainer {
+    width: 70%;
+  }
 }
 
 .image-container {
@@ -330,27 +387,17 @@ li a {
   text-decoration: none;
 }
 .successMessageAlert {
-  width: 400px;
-  background: #dff0ff 0% 0% no-repeat padding-box;
-  border: 1px solid #2185d0;
-  opacity: 1;
-  margin-bottom: 6%;
-  display: grid;
-  font-family: "EMPrintSemibold";
+  background-color: #dff0ff;
   color: #2185d0;
-  padding: 1%;
-  margin-left: 35%;
+  box-shadow: 0 0 0 1px #2185d0 inset, 0 0 0 0 transparent;
+  width: 238px;
+  padding: 3%;
 }
 
 .errorMessageAlert {
-  width: 400px;
-  background: #ffe8e6 0% 0% no-repeat padding-box;
-  border: 1px solid #db2828;
-  opacity: 1;
-  margin-bottom: 6%;
-  display: grid;
-  font-family: "EMPrintSemibold";
+  background-color: #ffe8e6;
   color: #db2828;
-  padding: 1%;
-  margin-left: 35%;
+  box-shadow: 0 0 0 1px #db2828 inset, 0 0 0 0 transparent;
+  width: 238px;
+  padding: 3%;
 }

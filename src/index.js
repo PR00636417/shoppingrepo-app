@@ -5,13 +5,19 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 //import { BrowserRouter as Router } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
+import configureStore from "./redux/configureStore";
+import { Provider as ReduxProvider } from "react-redux";
+
+const store = configureStore();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </React.StrictMode>,
+  <ReduxProvider store={store}>
+    <React.StrictMode>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </React.StrictMode>
+  </ReduxProvider>,
   document.getElementById("root")
 );
 
