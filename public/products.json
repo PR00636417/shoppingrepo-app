@@ -1,47 +1,47 @@
 {
-  "Dungaree": {
-    "name": "Dungaree",
+  "DrumKeyboard": {
+    "name": "DrumKeyboard",
     "price": 400,
     "numbers": 0,
-    "url": "dungaree  .jpeg"
+    "url": "drumkeyboard.jpeg"
   },
-  "RedFrock": {
-    "name": "RedFrock",
+  "Himalaya": {
+    "name": "Himalaya",
     "price": 700,
     "numbers": 0,
-    "url": "assets/clothing/girlsparty.jpeg"
+    "url": "himalaya.jpeg"
   },
 
-  "BlueJacket": {
-    "name": "BlueJacket",
-    "price": 900,
+  "JungleBook": {
+    "name": "JungleBook",
+    "price": 650,
     "numbers": 0,
-    "url": "assets/clothing/hoodie.jpeg"
+    "url": "junglebook.jpeg"
   },
 
-  "PinkJacket": {
-    "name": "PinkJacket",
+  "LaughingBoy": {
+    "name": "LaughingBoy",
     "price": 1400,
     "numbers": 0,
-    "url": "assets/clothing/jacket.jpeg"
+    "url": "laughingboy.jpeg"
   },
 
-  "StripedSaree": {
-    "name": "StripedSaree",
-    "price": 1400,
+  "MamaEarth": {
+    "name": "MamaEarth",
+    "price": 940,
     "numbers": 0,
-    "url": "assets/clothing/StripedSaree.jpeg"
+    "url": "mamaearth.jpeg"
   },
-  "YellowDress": {
-    "name": "YellowDress",
-    "price": 1400,
+  "Pikachu": {
+    "name": "Pikachu",
+    "price": 870,
     "numbers": 0,
-    "url": "assets/clothing/yellowDress.jpeg"
+    "url": "pikachu.jpeg"
   },
-  "FormalShirt": {
-    "name": "FormalShirt",
+  "Teddy": {
+    "name": "Teddy",
     "price": 1400,
     "numbers": 0,
-    "url": "assets/clothing/FormalShirt.jpeg"
+    "url": "teddy.jpeg"
   }
 }
