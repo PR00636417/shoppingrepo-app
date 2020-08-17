@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shoppingrepo-app/static/css/main.39bf9bb5.chunk.css",
-    "main.js": "/shoppingrepo-app/static/js/main.f3fa8625.chunk.js",
-    "main.js.map": "/shoppingrepo-app/static/js/main.f3fa8625.chunk.js.map",
+    "main.css": "/shoppingrepo-app/static/css/main.8817b741.chunk.css",
+    "main.js": "/shoppingrepo-app/static/js/main.53a1298c.chunk.js",
+    "main.js.map": "/shoppingrepo-app/static/js/main.53a1298c.chunk.js.map",
     "runtime-main.js": "/shoppingrepo-app/static/js/runtime-main.48c60576.js",
     "runtime-main.js.map": "/shoppingrepo-app/static/js/runtime-main.48c60576.js.map",
-    "static/js/2.2b564805.chunk.js": "/shoppingrepo-app/static/js/2.2b564805.chunk.js",
-    "static/js/2.2b564805.chunk.js.map": "/shoppingrepo-app/static/js/2.2b564805.chunk.js.map",
+    "static/js/2.8cc8807e.chunk.js": "/shoppingrepo-app/static/js/2.8cc8807e.chunk.js",
+    "static/js/2.8cc8807e.chunk.js.map": "/shoppingrepo-app/static/js/2.8cc8807e.chunk.js.map",
     "index.html": "/shoppingrepo-app/index.html",
-    "precache-manifest.be2e0c21d784a218ec07faac562f0b01.js": "/shoppingrepo-app/precache-manifest.be2e0c21d784a218ec07faac562f0b01.js",
+    "precache-manifest.b6937a954d7055e9453a3fb9c8eef449.js": "/shoppingrepo-app/precache-manifest.b6937a954d7055e9453a3fb9c8eef449.js",
     "service-worker.js": "/shoppingrepo-app/service-worker.js",
-    "static/css/main.39bf9bb5.chunk.css.map": "/shoppingrepo-app/static/css/main.39bf9bb5.chunk.css.map",
-    "static/js/2.2b564805.chunk.js.LICENSE.txt": "/shoppingrepo-app/static/js/2.2b564805.chunk.js.LICENSE.txt",
+    "static/css/main.8817b741.chunk.css.map": "/shoppingrepo-app/static/css/main.8817b741.chunk.css.map",
+    "static/js/2.8cc8807e.chunk.js.LICENSE.txt": "/shoppingrepo-app/static/js/2.8cc8807e.chunk.js.LICENSE.txt",
     "static/media/FormalShirt.jpeg": "/shoppingrepo-app/static/media/FormalShirt.ee9e2474.jpeg",
     "static/media/StripedSaree.jpeg": "/shoppingrepo-app/static/media/StripedSaree.c19a8e14.jpeg",
     "static/media/babyShopcover.jpg": "/shoppingrepo-app/static/media/babyShopcover.5493a000.jpg",
@@ -27,12 +27,13 @@
     "static/media/mamaearth.jpeg": "/shoppingrepo-app/static/media/mamaearth.7083fffe.jpeg",
     "static/media/pikachu.jpeg": "/shoppingrepo-app/static/media/pikachu.a6912889.jpeg",
     "static/media/teddy.jpeg": "/shoppingrepo-app/static/media/teddy.d78ea378.jpeg",
+    "static/media/tricycle.jpeg": "/shoppingrepo-app/static/media/tricycle.641277e8.jpeg",
     "static/media/yellowDress.jpeg": "/shoppingrepo-app/static/media/yellowDress.a52040ff.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.48c60576.js",
-    "static/js/2.2b564805.chunk.js",
-    "static/css/main.39bf9bb5.chunk.css",
-    "static/js/main.f3fa8625.chunk.js"
+    "static/js/2.8cc8807e.chunk.js",
+    "static/css/main.8817b741.chunk.css",
+    "static/js/main.53a1298c.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d3ca143f3e33dc48d36bdb3d9f46083",
+    "revision": "a1e04a03eb36e36068265345bb2e2837",
     "url": "/shoppingrepo-app/index.html"
   },
   {
-    "revision": "568cf44c7001640ce5c6",
-    "url": "/shoppingrepo-app/static/css/main.39bf9bb5.chunk.css"
+    "revision": "4a25c5e3d29f904755f5",
+    "url": "/shoppingrepo-app/static/css/main.8817b741.chunk.css"
   },
   {
-    "revision": "fed82fe9570763fb5342",
-    "url": "/shoppingrepo-app/static/js/2.2b564805.chunk.js"
+    "revision": "0af80a9487fec1422ad8",
+    "url": "/shoppingrepo-app/static/js/2.8cc8807e.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/shoppingrepo-app/static/js/2.2b564805.chunk.js.LICENSE.txt"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/shoppingrepo-app/static/js/2.8cc8807e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "568cf44c7001640ce5c6",
-    "url": "/shoppingrepo-app/static/js/main.f3fa8625.chunk.js"
+    "revision": "4a25c5e3d29f904755f5",
+    "url": "/shoppingrepo-app/static/js/main.53a1298c.chunk.js"
   },
   {
     "revision": "4d8877648f58f5c087e9",
@@ -82,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d78ea3783f8378e1ba3d375a46ddf02a",
     "url": "/shoppingrepo-app/static/media/teddy.d78ea378.jpeg"
+  },
+  {
+    "revision": "641277e817f0da5bc548b01bead7d589",
+    "url": "/shoppingrepo-app/static/media/tricycle.641277e8.jpeg"
   },
   {
     "revision": "a52040ffa4cad142efe7c75977c34c31",

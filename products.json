@@ -1,0 +1,47 @@
+{
+  "DrumKeyboard": {
+    "name": "DrumKeyboard",
+    "price": 400,
+    "numbers": 0,
+    "url": "drumkeyboard.jpeg"
+  },
+  "Himalaya": {
+    "name": "Himalaya",
+    "price": 700,
+    "numbers": 0,
+    "url": "himalaya.jpeg"
+  },
+
+  "JungleBook": {
+    "name": "JungleBook",
+    "price": 650,
+    "numbers": 0,
+    "url": "junglebook.jpeg"
+  },
+
+  "LaughingBoy": {
+    "name": "LaughingBoy",
+    "price": 1400,
+    "numbers": 0,
+    "url": "laughingboy.jpeg"
+  },
+
+  "MamaEarth": {
+    "name": "MamaEarth",
+    "price": 940,
+    "numbers": 0,
+    "url": "mamaearth.jpeg"
+  },
+  "Pikachu": {
+    "name": "Pikachu",
+    "price": 870,
+    "numbers": 0,
+    "url": "pikachu.jpeg"
+  },
+  "Teddy": {
+    "name": "Teddy",
+    "price": 1400,
+    "numbers": 0,
+    "url": "teddy.jpeg"
+  }
+}
